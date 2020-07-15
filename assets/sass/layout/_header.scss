@@ -1,0 +1,44 @@
+.header__img{
+width: 100%;
+height: auto;
+position: relative;
+}
+
+.header__col{
+  display: grid;
+  grid-template-columns: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+  position: absolute;
+}
+
+.header__title{
+  font-family: $raleway;
+  font-size: $xxxxx-large;
+  font-weight: $bold;
+}
+
+.header__text{
+  font-family: $raleway;
+  font-size: $large;
+  font-weight: $regular;
+}
+
+
+
+@media (max-width: 768px) {
+  .header__col{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+  .header__img{
+    width: 600px;
+    margin-top: 400px;
+    position: static;
+    float: right;
+  }
+}

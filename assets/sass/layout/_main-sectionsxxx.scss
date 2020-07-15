@@ -1,0 +1,183 @@
+
+//General
+.main__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__title{
+
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $xxxx-large;
+  text-align: center;
+}
+
+.black{
+  color: $raisingblack;
+}
+
+.white{
+  color: $white;
+}
+
+
+//Caracteristicas
+.main__features-title{
+  font-size: $x-large;
+  font-family: $raleway;
+  font-weight: $bold;
+}
+
+.main__features-content{
+  line-height: 35px;
+}
+
+.main__features-content{
+  font-size: $small;
+  font-family: $raleway;
+  font-weight: $regular;
+}
+
+
+// Grafico
+.bar-graph{
+&:hover {
+  animation: show 3s;
+  animation-iteration-count: infinite;
+}
+}
+@keyframes show{
+  0% {opacity: 0%;}
+  100%{opacity: 100%;}
+}
+
+//Precios
+.main__bg{
+  background-image: url("../img/bg-price.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%
+}
+
+.main__container{
+  margin-top: 300px;
+}
+
+.main__card{
+  background-color: $white;
+  width: 450px;
+  margin: 50px;
+  padding: 25px;
+  padding-top: 60px;
+  border: 2px solid $spanishgray;
+
+  &:hover{
+    box-shadow: 0px 0px 30px $raisingblack;
+  }
+
+
+}
+
+.main__card-items{
+  height: 280px;
+}
+
+.main__prices{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 1100px;
+  }
+
+.main__li{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: $large;
+  font-family: $raleway;
+  font-weight: $regular;
+}
+
+.main__card-title{
+  font-family: $raleway;
+  font-weight: $regular;
+  font-size: $xx-large;
+}
+
+.main__card-subtitle{
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $xxxx-large;
+}
+
+
+
+
+//Para Mobiles
+
+@media (max-width: 768px) {
+  .main__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__container{
+    margin-top: 100px;
+    background-color: $onyx;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+  }
+
+
+  .main__card{
+    width: 320px;
+      margin: 25px;
+  }
+
+  .main__prices{
+    height: 1500px;
+
+  }
+
+  .main__features-text{
+    width: 300px;
+    margin: 15px;
+
+  }
+
+  .main__bg{
+    background-image: url("../img/bg-price.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main__li{
+    font-size: $small;
+  }
+
+  .main__card-items{
+    height: auto;
+  }
+
+  .main__card-title{
+    font-size: $large;
+  }
+
+  .main__title{
+    font-size: $xxx-large;
+margin-left: auto;
+margin-right: auto;
+
+
+  }
+  .main__features-title{
+    font-size: $large;
+}
+
+
+
+}
